@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/main_background"/>
+
+    <item android:top="330dp">
+        <bitmap android:src="@drawable/splash_logo" android:gravity="top"/>
+    </item>
+
+    <item android:top="270dp">
+        <bitmap android:src="@drawable/splash_text" android:gravity="top"/>
+    </item>
+</layer-list>

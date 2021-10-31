@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/user1"
+        app:civ_border_color="#FFCCCCCC"
+        app:civ_border_width="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userId_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아아디"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/minute_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xx분전"
+                android:textSize="12dp" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:isIndicator="true"
+                android:max="5"
+                android:numStars="5"
+                android:progressTint="#3BDBEF"
+                android:rating="5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/review_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="감상 후기 입니다."
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천 0"
+                android:textColor="#000000"/>
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="신고하기"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

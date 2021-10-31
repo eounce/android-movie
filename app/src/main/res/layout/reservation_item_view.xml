@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/reservation_relativeLayout">
+
+    <ImageView
+        android:id="@+id/reservation_image"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"/>
+
+    <ImageView
+        android:id="@+id/reservation_background_image"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#CB676767"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/reservation_grade"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_15"
+        android:layout_alignRight="@+id/reservation_image"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="5dp"/>
+
+    <ImageView
+        android:id="@+id/reservation_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_check_circle_outline_24"
+        android:layout_alignRight="@+id/reservation_image"
+        android:layout_alignBottom="@+id/reservation_image"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/reservation_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

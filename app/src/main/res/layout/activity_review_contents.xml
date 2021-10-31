@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="영화이름"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ratingView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#B3B2B2"
+        android:orientation="vertical" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="#E91E63"
+        android:rating="0"
+        android:stepSize="0.5"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="평점을 입력해 주세요"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:id="@+id/contentsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="100자 이내로 작성해주세요."
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:maxLength="100"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="저 장"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/border_all_view"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="취 소"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_all_view"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieImage4"
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/movieTitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movieImage4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textSize="34dp" />
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/movieTitle4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/movieTitle4"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="top|center">
+
+        <TextView
+            android:id="@+id/movieRate4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"/>
+
+        <TextView
+            android:id="@+id/movieGrade4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="16dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/movieTitle4"
+        android:layout_marginTop="70dp"
+        android:text="상세보기"
+        android:textSize="24dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/movie_list_button"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

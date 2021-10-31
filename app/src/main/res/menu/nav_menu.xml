@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/movieList"
+            android:title="영화 목록"
+            android:icon="@drawable/ic_list"/>
+        <item
+            android:id="@+id/movieReview"
+            android:title="영화 검색"
+            android:icon="@drawable/ic_review"/>
+        <item
+            android:id="@+id/movieBook"
+            android:title="예매 확인"
+            android:icon="@drawable/ic_book"/>
+    </group>
+</menu>
